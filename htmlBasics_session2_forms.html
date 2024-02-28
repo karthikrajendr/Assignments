@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea,
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/action_page.php" method="get">
+
+        <label>First Name</label>
+        <input type="text" name="FN" value="This is a text field" />
+        <label>Password</label>
+        <input type="password" name="password" value="Password" />
+        <textarea name="Comments" rows="10" cols="30"> This is a multiline text field</textarea>
+        <label>Gender</label>
+        <select name="Gender">
+            <option value="Male" selected="selected">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+
+            <!-- File upload box -->
+            <input type="file" name="fileupload" accept="image/*" />
+            <button type="submit">Submit</button>
+
+            <input type="hidden" name="Account" value="This is a hidden text field" />
+
+            <button type="button" onclick="alert('Hello There, Good Morning. Go to bed mudchucker, its 00:16AM')">Click
+                Me!</button>
+
+            <input type="text" name="company name" value="Company name" size="10">
+            Select Color:
+            <input type="color" name="favColor">
+
+    </form>
+
+    <p>My family and I visited The Epcot center this summer.</p>
+    <aside>
+        <h4>Epcot Center</h4>
+        <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+
+    <figure> <img src="pic_mountain.jpg" alt="The Pulpit Rock" width="304" height="228"> <figcaption>Fig1. - The Pulpit Rock, Norway.</figcaption> </figure>
+
+    <input list="browsers">
+
+    <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist>
+
+</body>
+
+</html>
